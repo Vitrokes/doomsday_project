@@ -4,8 +4,8 @@ Interface inicial do Programa, onde o usuário escolhe o que deseja fazer.
 
 import os
 import random
-import logica    # Importa as funções do algoritmo
-import savefile  # Importa o banco de dados
+import logica   
+import savefile
 
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
