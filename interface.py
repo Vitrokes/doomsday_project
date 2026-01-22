@@ -41,12 +41,12 @@ def modo_calculadora():
     res = logica.descobrir_dia_semana(d, m, a)
     nome = logica.NOMES_DIAS[res]
     
-    print(f"\n📅 {d}/{m}/{a} é: {nome.upper()}")
+    print(f"\n📅 {d:02d}/{m:02d}/{a} é: {nome.upper()}")
     input("\nEnter para voltar...")
 
 def modo_jogo():
     limpar_tela()
-    print("=== 🎮 SOBREVIVÊNCIA ===")
+    print("=== 🎮  SOBREVIVÊNCIA ===")
     pontos = 0
     
     while True:
@@ -61,7 +61,7 @@ def modo_jogo():
         dia = random.randint(1, max_d)
         
         # Pergunta
-        print(f"\nData: {dia}/{mes}/{ano}")
+        print(f"\nData: {dia:02d}/{mes:02d}/{ano}")
         print("0-Dom 1-Seg 2-Ter 3-Qua 4-Qui 5-Sex 6-Sab")
         
         try:
@@ -93,7 +93,7 @@ def iniciar():
     
     while True:
         limpar_tela()
-        print("=== DOOMSDAY TRAINER ===")
+        print("=== DOOMSDAY TRAINER 🧠🗓️ ===")
         print("1. Jogar")
         print("2. Calculadora")
         print("3. Ranking")
